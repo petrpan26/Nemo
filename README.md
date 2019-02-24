@@ -1,3 +1,3 @@
 # Nemo
 Video scene seeking tool
-Contributors: [https://github.com/petrpan26](Hoang Phan), [https://github.com/ThaoTrann](Thao Tran), [https://github.com/nhan-tri-nguyen] Nhan Nguyen, Anh Le
+Contributors: [Hoang Phan](https://github.com/petrpan26), [Thao Tran](https://github.com/ThaoTrann), [Nhan Nguyen](https://github.com/nhan-tri-nguyen), Anh Le
