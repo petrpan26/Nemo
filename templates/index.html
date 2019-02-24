@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>The HTML5 Herald</title>
+    <link rel="stylesheet" href="/static/frontend.css" />
+    <meta name="description" content="The HTML5 Herald" />
+    <meta name="author" content="SitePoint" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Inconsolata|Nunito|Nunito+Sans|Pacifico|Quicksand|Rubik|VT323" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=BioRhyme|Black+Ops+One|Bungee|Bungee+Shade|Cabin|Creepster|Ewert|Fruktur|Gravitas+One|Inconsolata|Monoton|Nunito|Nunito+Sans|Pacifico|Quicksand|Rubik:400,900|VT323" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <nav class="light-blue lighten-2" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo" style="font-family:Bungee Shade;color: black">
+            Nemo.AI</a>
+    </nav>
+    <div class="section no-pad-bot" id="index-banner">
+      <div class="container">
+        <div>
+          <iframe
+            id="video"
+            width="50%"
+            height="285"
+            style="margin-left: 25%"
+            src="https://www.youtube.com/embed/IdneKLhsWOQ"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="input-field">
+          <b>Paste a Youtube link here:</b><br />
+          <input type="text" name="YoutubeLink" id="youtube" placeholder="Link"><br />
+        </div>
+        <a
+          class="waves-effect waves-light btn blue"
+          onclick="clickSet()"
+          style="margin-top: 10px"
+          >Set</a
+        >
+        <div class="input-field" style="margin-top: 10px">
+          <b>Enter caption here:</b><br />
+          <input type="text" name="Caption" id="caption" placeholder="Caption"/><br />
+        </div>
+        <a
+          class="waves-effect waves-light btn blue"
+          onclick="clickSubmit()"
+          style="margin-top: 10px"
+          >Submit</a
+        >
+        <b><div id="status" style="margin-top: 10px"></div></b>
+        <div class="row">
+          <div class="col s6 offset-s3">
+          <div id="loader" hidden="hidden">
+            <div class="progress blue">
+                <div class="indeterminate blue lighten-3"></div>
+            </div>
+          </div>
+        </div>
+       </div>
+      </div>
+    </div>
+    <script src="/static/frontend.js?v=<?php echo microtime(); ?>"></script>
+  </body>
+</html>
